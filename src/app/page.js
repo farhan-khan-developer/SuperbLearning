@@ -6,7 +6,9 @@ export default function Home() {
     <>
     <div className="flex flex-col gap-3">
       <Herosection/>
-      <CoursesCards/>
+      <div className="md:visible xxsm:invisible">
+        <CoursesCards/>
+      </div>
     </div>
     </>
   );
