@@ -1,13 +1,12 @@
 'use client'
 
 import React from 'react'
-import Carousel from 'react-spring-3d-carousel';
 import { v4 as uuidv4 } from "uuid";
-import Carousssel from '../components/Carousssel';
+// import Carousssel from '../components/Carousssel';
 import Card from '../components/Cards/Card';
-// import corporateimg from '../../../public/corporatetrainingimg.png'
-// import phonicsimg from '../../../public/phonicsimg.png'
-// import teacherimg from '../../../public/teachertrainingimg.png'
+import dynamic from 'next/dynamic';
+
+const Carousssel = dynamic(() => import('../components/Carousssel'), { ssr: false });
 
 const CoursesCards = () => {
 
