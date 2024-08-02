@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      margin:{
+        'body':'36px'
+      },
       screens: {
         xxsm: '350px',
         xsm: '425px',
