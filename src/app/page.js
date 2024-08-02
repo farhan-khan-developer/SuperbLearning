@@ -1,10 +1,11 @@
+import Update from "./components/Update";
 
 
 export default function Home() {
   return (
     <>
     <div>
-      <h1>Superb learning</h1>
+      <Update/>
     </div>
     </>
   );
