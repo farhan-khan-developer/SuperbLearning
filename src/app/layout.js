@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
 import { Concert_One } from "next/font/google";
 import { NavbarDemo } from "./components/NavbarDemo";
 
