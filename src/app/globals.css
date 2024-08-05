@@ -5,3 +5,44 @@
 body{
   @apply mx-40 my-5
 }
+
+h1 {
+  font-family: 'Lato', sans-serif;
+}
+
+h2, h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Track background */
+  border-radius: 10px; /* Rounded corners */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar handle */
+  border-radius: 10px; /* Rounded corners */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Handle on hover */
+}
+
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.custom-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
