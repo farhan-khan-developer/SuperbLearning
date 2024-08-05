@@ -2,6 +2,25 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Concert_One } from "next/font/google";
 import { NavbarDemo } from "./components/NavbarDemo";
+import { Lato, Raleway, Roboto } from 'next/font/google';
+
+// Configure Lato font
+const lato = Lato({
+  subsets: ['latin'],
+  weight: ['400', '700'], // Specify the weights you need
+});
+
+// Configure Raleway font
+const raleway = Raleway({
+  subsets: ['latin'],
+  weight: ['400', '700'], // Specify the weights you need
+});
+
+// Configure Roboto font
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '700'], // Specify the weights you need
+});
 
 const inter = Inter({ subsets: ["latin"] });
 const concert = Concert_One({subsets: ["latin"], weight: ['400']})
@@ -14,9 +33,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      {/* <head>
+        <style>{`
+          body {
+            font-family: ${lato.style.fontFamily};
+          }
+          h1, h2, h3 {
+            font-family: ${raleway.style.fontFamily};
+          }
+          p {
+            font-family: ${roboto.style.fontFamily};
+          }
+        `}</style>
+      </head> */}
       <body>
         <NavbarDemo/>
-        <div className={`${concert.className} relative top-12`}>{children}</div>
+        <div className={`relative top-12`}>{children}</div>
       </body>
     </html>
   );
