@@ -4,7 +4,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/react-splide/css/core';
+import '@splidejs/react-splide/css';  // Correct import for default theme
 import Image from 'next/image';
 
 const Update = () => {
@@ -12,10 +12,10 @@ const Update = () => {
     <div className='relative'>
         <Splide
         options={{
-            type:'loop',
-            autoplay:true,
-            arrows:false,
-            interval:3000
+            type: 'loop',
+            autoplay: true,
+            arrows: false,
+            interval: 3000
         }}
         >
         <SplideSlide className='relative'>
