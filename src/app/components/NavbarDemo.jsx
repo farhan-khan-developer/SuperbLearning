@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../components/ui/navbar-menu";
+import Link from "next/link";
 
 export function NavbarDemo() {
   return (
@@ -20,14 +21,16 @@ function Navbar(className) {
       className={"fixed top-0 inset-x-0 max-w-9xl mx-auto z-50"}
     >
       <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="About Us">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
-          </div>
-        </MenuItem>
+        <Link href='/about'>
+          <MenuItem setActive={setActive} active={null} item="About Us">
+            {/* <div className="flex flex-col space-y-4 text-sm">
+              <HoveredLink href="/web-dev">Web Development</HoveredLink>
+              <HoveredLink href="/interface-design">Interface Design</HoveredLink>
+              <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
+              <HoveredLink href="/branding">Branding</HoveredLink>
+            </div> */}
+          </MenuItem>
+        </Link>
         <MenuItem setActive={setActive} active={active} item="Courses">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             {/* <ProductItem
