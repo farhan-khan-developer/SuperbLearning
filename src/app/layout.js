@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Footer from "./components/Footer";
 import { Concert_One } from "next/font/google";
 import { NavbarDemo } from "./components/NavbarDemo";
 import { Lato, Raleway, Roboto } from 'next/font/google';
@@ -48,7 +49,8 @@ export default function RootLayout({ children }) {
       </head> */}
       <body>
         <NavbarDemo/>
-        <div className={`relative top-12`}>{children}</div>
+        <div className="mt-12">{children}</div>
+        <Footer />
       </body>
     </html>
   );
