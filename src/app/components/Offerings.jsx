@@ -52,21 +52,21 @@ const DummyContent = () => {
 
 const data = [
   {
-    category: "Artificial Intelligence",
-    title: "You can do more with AI.",
-    src: "/holistic.jpg",
+    // category: "Artificial Intelligence",
+    title: "Phonics",
+    src: "/phonics.jpg",
     content: <DummyContent />,
   },
   {
-    category: "Productivity",
-    title: "Enhance your productivity.",
-    src: "/holistic.jpg",
+    // category: "Productivity",
+    title: "Teacher",
+    src: "/teacher.jpg",
     content: <DummyContent />,
   },
   {
-    category: "Product",
-    title: "Launching the new Apple Vision Pro.",
-    src: "/holistic.jpg",
+    // category: "Product",
+    title: "Corporate",
+    src: "/corporate2img.png.jpg",
     content: <DummyContent />,
   },
 
