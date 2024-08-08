@@ -12,6 +12,7 @@ import { cn } from "@/app/libs/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useOutsideClick } from "@/app/hooks/use-outside-click";
+import { FaRegArrowAltCircleRight } from "react-icons/fa";
 
 const CarouselContext = createContext({
   onCardClose: () => {},
@@ -200,20 +201,22 @@ const Card = ({ card, index, layout = false }) => {
         onClick={handleOpen}
         className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
       >
-        <div className="absolute inset-x-0 top-0 z-30 h-full pointer-events-none bg-gradient-to-b from-black/50 via-transparent to-transparent" />
-        <div className="relative z-40 p-8">
-          <motion.p
+        <div className="absolute inset-x-0 bottom-0 z-30 h-full pointer-events-none bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+        <div className="relative z-40 p-8 h-full flex flex-col justify-end">
+          {/* <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
             className="font-sans text-sm font-medium text-left text-white md:text-base"
           >
             {card.category}
-          </motion.p>
-          <motion.p
+          </motion.p> */}
+          <motion.div
             layoutId={layout ? `title-${card.title}` : undefined}
-            className="text-white text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
+            className="text-white text-5xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2 flex justify-center items-center gap-5"
           >
-            {card.title}
-          </motion.p>
+            {card.title} <br />
+            Training
+            <h1 className="text-5xl"><FaRegArrowAltCircleRight /></h1>
+          </motion.div>
         </div>
         <BlurImage
           src={card.src}
