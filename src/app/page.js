@@ -9,7 +9,7 @@ import Update from "./components/Update";
 export default function Home() {
   return (
     <>
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 mx-40 my-5">
       <Update/>
       <Herosection/>
       <Offerings />
