@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
     <div className="flex flex-col gap-10 md:mx-40 xxsm:mx-5 my-5">
-      {/* <div className="flex flex-col gap-10 xxsm:h-screen md:h-auto">
+      {/* <div className="flex flex-col justify-center items-center gap-10">
         <Update/>
         <Herosection/>
       </div> */}
