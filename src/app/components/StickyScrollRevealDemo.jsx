@@ -105,7 +105,7 @@ const content = [
 export function StickyScrollRevealDemo() {
   return (
     <div className="flex flex-col justify-center items-center gap-5 pt-5">
-        <h2 className="text-5xl">What Sets Us Apart</h2>
+        <h2 className="md:text-5xl xxsm:text-3xl">What Sets Us Apart</h2>
       <StickyScroll content={content} />
     </div>
   );
