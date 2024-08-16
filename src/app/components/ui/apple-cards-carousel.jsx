@@ -75,7 +75,7 @@ const Carousel = ({ items, initialScroll = 0 }) => {
     >
       <div className="relative w-full">
         <div
-          className="flex w-full overflow-x-scroll overscroll-x-auto py-10 md:py-20 scroll-smooth [scrollbar-width:none]"
+          className="flex w-full overflow-x-scroll overscroll-x-auto py-10 md:py-10 scroll-smooth [scrollbar-width:none]"
           ref={carouselRef}
           onScroll={checkScrollability}
         >
@@ -179,17 +179,17 @@ const Card = ({ card, index, layout = false }) => {
               >
                 <IoIosCloseCircle className="w-6 h-6 text-neutral-100 dark:text-neutral-900" />
               </button>
-              <motion.p
+              {/* <motion.p
                 layoutId={layout ? `category-${card.title}` : undefined}
                 className="text-base font-medium text-black dark:text-white"
               >
                 {card.category}
-              </motion.p>
+              </motion.p> */}
               <motion.p
                 layoutId={layout ? `title-${card.title}` : undefined}
-                className="mt-4 text-2xl font-semibold md:text-5xl text-neutral-700 dark:text-white"
+                className="mt-4 text-2xl font-semibold md:text-4xl text-neutral-700 dark:text-white"
               >
-                {card.title}
+                Welcome to Superb Learning <span >{card.title}</span> Training Program!
               </motion.p>
               <div className="py-10">{card.content}</div>
             </motion.div>
@@ -199,7 +199,7 @@ const Card = ({ card, index, layout = false }) => {
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
-        className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
+        className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-[35rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
       >
         <div className="absolute inset-x-0 bottom-0 z-30 h-full pointer-events-none bg-gradient-to-t from-black/50 via-transparent to-transparent" />
         <div className="relative z-40 p-8 h-full flex flex-col justify-end">
@@ -215,7 +215,7 @@ const Card = ({ card, index, layout = false }) => {
           >
             {card.title} <br />
             Training
-            <h1 className="text-5xl"><FaRegArrowAltCircleRight /></h1>
+            {/* <h1 className="text-5xl"><FaRegArrowAltCircleRight /></h1> */}
           </motion.div>
         </div>
         <BlurImage
