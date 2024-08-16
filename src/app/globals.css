@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-  @apply my-5
+  @apply mt-5
 }
 
 h1 {

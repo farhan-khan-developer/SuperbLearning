@@ -11,9 +11,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      margin: {
-        body: "36px",
-      },
+      // margin: {
+      //   body: "36px",
+      // },
       screens: {
         xxsm: "350px",
         xsm: "425px",
@@ -39,6 +39,17 @@ module.exports = {
         'light-pink': 'var(--light-pink)',
         'soft-blue': 'var(--soft-blue)',
       },
+      // extend: {
+      //   margin: {
+      //     'body-xxsm': '16px',   // Very small screens
+      //     'body-xsm': '24px',    // Extra small screens
+      //     'body-sm': '28px',     // Small screens
+      //     'body-md': '32px',     // Medium screens
+      //     'body-lg': '36px',     // Large screens
+      //     'body-xl': '40px',     // Extra large screens
+      //     'body-2xl': '48px',    // 2XL screens
+      //   },
+      // },
     },
   },
   plugins: [
