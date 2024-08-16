@@ -202,7 +202,7 @@ const Card = ({ card, index, layout = false }) => {
         className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-[35rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
       >
         <div className="absolute inset-x-0 bottom-0 z-30 h-full pointer-events-none bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-        <div className="relative z-40 p-8 h-full flex flex-col justify-end">
+        <div className="relative z-40 md:p-8 xxsm:p-3 h-full flex flex-col justify-end">
           {/* <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
             className="font-sans text-sm font-medium text-left text-white md:text-base"
@@ -211,7 +211,7 @@ const Card = ({ card, index, layout = false }) => {
           </motion.p> */}
           <motion.div
             layoutId={layout ? `title-${card.title}` : undefined}
-            className="text-white text-5xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2 flex justify-center items-center gap-5"
+            className="text-white md:text-5xl xxsm:text-xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2 flex justify-center items-center gap-5"
           >
             {card.title} <br />
             Training

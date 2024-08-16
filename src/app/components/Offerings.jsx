@@ -14,7 +14,7 @@ export const Offerings = ()=> {
 
   return (
     <div className="flex flex-col items-center justify-center">
-        <h2 className="text-5xl">Explore our Offerings.</h2>
+        <h2 className="md:text-5xl xxsm:text-3xl">Explore our Offerings.</h2>
         <Carousel items={cards} />
     </div>
 
