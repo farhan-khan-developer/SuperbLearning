@@ -19,7 +19,7 @@ const Update = () => {
         }}
         >
         <SplideSlide className='relative'>
-            <div className='w-full h-[400px] relative'>
+            <div className='md:w-full xxsm:h-[200px] md:h-[400px] relative'>
             <Image 
                 src='/updateimg1.jpg' 
                 alt="Update Image 1" 
@@ -30,7 +30,7 @@ const Update = () => {
             </div>
         </SplideSlide>
         <SplideSlide className='relative'>
-            <div className='w-full h-[400px] relative'>
+            <div className='md:w-full xxsm:h-[200px] md:h-[400px] relative'>
             <Image 
                 src='/updateimg2.jpg' 
                 alt="Update Image 2" 
@@ -45,7 +45,7 @@ const Update = () => {
         src='/Vector.png'
         width={60}
         height={60}
-        className='absolute -top-3 -right-8'
+        className='absolute -top-3 md:-right-8 xxsm:w-[40px] xxsm:h-[25px] md:w-[60px] md:h-[40px] xxsm:-right-5'
         />
     </div>
   )

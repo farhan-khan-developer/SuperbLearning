@@ -35,15 +35,7 @@ const FOOTER_SECTIONS = [
       {
         label: "Blogs",
         link: "/",
-      },
-      {
-        label: "Featured Course",
-        link: "/",
-      },
-      {
-        label: "Course",
-        link: "/",
-      },
+      }
     ],
   },
   {
@@ -85,8 +77,8 @@ const FOOTER_SECTIONS = [
 
 const Footer = () => {
   return (
-    <div className="flex flex-col w-full px-10 bg-black ">
-      <div className="flex items-center justify-between footer-top pt-[50px] pb-5 px-[75px]">
+    <div className="flex flex-col w-full px-32 bg-black bottom-0">
+      <div className="flex items-center justify-between footer-top pt-[50px] pb-5 px-[75px] ">
         
           <div className="flex flex-col items-center justify-center gap-5 ">
             <img src="/superbruclogo 1.png" className="footer-logo w-[90px]" alt="Logo" />
@@ -96,10 +88,10 @@ const Footer = () => {
         <div className="flex flex-wrap justify-around gap-16 footer-sections">
           {FOOTER_SECTIONS.map((item, index) => (
             <div className="footer-section" key={index}>
-              <h4 className="m-0 font-semibold text-white mb-14 ">{item.title}</h4>
+              <h4 className="m-0 font-semibold text-white mb-14 text-xl">{item.title}</h4>
               {item.contents.map((content, index) => (
                 <Link href={content.link} key={index}>
-                  <h4 className="p-0 m-0 mt-8 mb-8 block text-[#989ab0] hover:text-white hover:underline text-sm ">
+                  <h4 className="p-0 m-0 mt-8 mb-8 block text-[#989ab0] hover:text-white text-lg">
                     {content.label}
                   </h4>
                 </Link>
