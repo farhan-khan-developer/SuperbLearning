@@ -9,7 +9,7 @@ export function TabsDemo() {
       title: "Basic Phonics Training",
       value: "product",
       content: (
-        <div className="w-full overflow-hidden relative rounded-2xl p-10 text-xl md:text-2xl font-bold text-neutral-200 bg-neutral-600">
+        <div className="w-full overflow-hidden relative rounded-2xl md:p-10 xxsm:p-3 text-xl md:text-2xl font-bold text-neutral-200 bg-neutral-600">
           <DummyContentOne />
         </div>
       ),
@@ -18,7 +18,7 @@ export function TabsDemo() {
       title: "Advanced Phonics Training",
       value: "services",
       content: (
-        <div className="w-full overflow-hidden relative rounded-2xl p-10 text-xl md:text-2xl font-bold text-neutral-200 bg-neutral-600">
+        <div className="w-full overflow-hidden relative rounded-2xl md:p-10 xxsm:p-3 text-xl md:text-2xl font-bold text-neutral-200 bg-neutral-600">
           <DummyContentTwo />
         </div>
       ),
@@ -26,7 +26,7 @@ export function TabsDemo() {
   ];
 
   return (
-    <div className="h-[16rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full mb-40">
+    <div className="md:h-[16rem] xxsm:h-[20rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full mb-40">
       <Tabs tabs={tabs} />
     </div>
   );
