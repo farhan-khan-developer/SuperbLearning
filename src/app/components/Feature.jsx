@@ -3,7 +3,7 @@ import { StickyScrollRevealDemo } from './StickyScrollRevealDemo'
 
 const Feature = () => {
   return (
-    <div className='h-screen  flex justify-center items-center'>
+    <div className='flex justify-center items-center mb-5'>
       <StickyScrollRevealDemo/>
     </div>
   )
