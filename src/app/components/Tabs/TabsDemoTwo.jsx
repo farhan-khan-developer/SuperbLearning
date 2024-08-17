@@ -5,10 +5,10 @@ import { TabsTwo } from "./TabsUi/tabstwo";
 export function TabsDemoTwo() {
   const tabs = [
     {
-      title: "Early Childhood Care and Education (ECCE)",
+      title: "Early Childhood Care and Education",
       value: "product",
       content: (
-        <div className="w-full overflow-hidden relative rounded-2xl p-10 text-xl md:text-xl font-bold text-neutral-200 bg-neutral-600">
+        <div className="w-full overflow-hidden relative rounded-2xl md:p-10 xxsm:p-5 md:text-xl font-bold text-neutral-200 bg-neutral-600">
           <DummyContentOne />
         </div>
       ),
@@ -17,7 +17,7 @@ export function TabsDemoTwo() {
       title: " Diploma in Guidance and Counselling",
       value: "services",
       content: (
-        <div className="w-full overflow-hidden relative rounded-2xl p-10 text-xl md:text-xl font-bold text-neutral-200 bg-neutral-600">
+        <div className="w-full overflow-hidden relative rounded-2xl md:p-10 xxsm:p-5 md:text-xl font-bold text-neutral-200 bg-neutral-600">
           <DummyContentTwo />
         </div>
       ),
@@ -26,7 +26,7 @@ export function TabsDemoTwo() {
         title: "Nursery Teacher Training (NTT)",
         value: "service",
         content: (
-          <div className="w-full overflow-hidden relative rounded-2xl p-10 text-xl md:text-xl font-bold text-neutral-200 bg-neutral-600">
+          <div className="w-full overflow-hidden relative rounded-2xl md:p-10 xxsm:p-5 md:text-xl font-bold text-neutral-200 bg-neutral-600">
             <DummyContentThree />
           </div>
         ),
@@ -35,7 +35,7 @@ export function TabsDemoTwo() {
         title: "Primary Teacher Training (PTT)",
         value: "Service",
         content: (
-          <div className="w-full overflow-hidden relative rounded-2xl p-10 text-xl md:text-xl font-bold text-neutral-200 bg-neutral-600">
+          <div className="w-full overflow-hidden relative rounded-2xl md:p-10 xxsm:p-5 md:text-xl font-bold text-neutral-200 bg-neutral-600">
             <DummyContentFour />
           </div>
         ),
@@ -43,7 +43,7 @@ export function TabsDemoTwo() {
   ];
 
   return (
-    <div className="h-[27rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full mb-40">
+    <div className="md:h-[27rem] xxsm:h-[35rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full mb-40">
       <TabsTwo tabs={tabs} />
     </div>
   );
