@@ -77,7 +77,7 @@ const FOOTER_SECTIONS = [
 
 const Footer = () => {
   return (
-    <div className="flex flex-col w-full md:px-32 xxsm:px-5 bg-black bottom-0">
+    <div className="flex flex-col w-full md:px-32 xxsm:px-10 xsm:px-16 bg-black bottom-0">
       <div className="flex items-center justify-between footer-top pt-[50px] pb-5 md:px-[75px] ">
         
               <div className="hidden md:flex md:flex-col md:items-center md:justify-center md:gap-5">
