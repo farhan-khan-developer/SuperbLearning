@@ -9,7 +9,7 @@ export function TabsDemoThree() {
       title: "Diploma in Corporate Training and Development",
       value: "product",
       content: (
-        <div className="w-full overflow-hidden relative rounded-2xl p-10 text-xl md:text-xl font-bold text-neutral-200 bg-neutral-600">
+        <div className="w-full overflow-hidden relative rounded-2xl md:p-10 xxsm:p-5 text-xl md:text-xl font-bold text-neutral-200 bg-neutral-600">
           <DummyContentOne />
         </div>
       ),
@@ -18,7 +18,7 @@ export function TabsDemoThree() {
       title: "Diploma in Front Office Executive",
       value: "services",
       content: (
-        <div className="w-full overflow-hidden relative rounded-2xl p-10 text-xl md:text-xl font-bold text-neutral-200 bg-neutral-600">
+        <div className="w-full overflow-hidden relative rounded-2xl md:p-10 xxsm:p-5 text-xl md:text-xl font-bold text-neutral-200 bg-neutral-600">
           <DummyContentTwo />
         </div>
       ),
@@ -27,7 +27,7 @@ export function TabsDemoThree() {
         title: "Diploma in Office Administrator",
         value: "service",
         content: (
-          <div className="w-full overflow-hidden relative rounded-2xl p-10 text-xl md:text-xl font-bold text-neutral-200 bg-neutral-600">
+          <div className="w-full overflow-hidden relative rounded-2xl md:p-10 xxsm:p-5 text-xl md:text-xl font-bold text-neutral-200 bg-neutral-600">
             <DummyContentThree />
           </div>
         ),
@@ -36,7 +36,7 @@ export function TabsDemoThree() {
         title: "Diploma in HR Executive Skills",
         value: "Service",
         content: (
-          <div className="w-full overflow-hidden relative rounded-2xl p-10 text-xl md:text-xl font-bold text-neutral-200 bg-neutral-600">
+          <div className="w-full overflow-hidden relative rounded-2xl md:p-10 xxsm:p-5 text-xl md:text-xl font-bold text-neutral-200 bg-neutral-600">
             <DummyContentFour />
           </div>
         ),
@@ -44,7 +44,7 @@ export function TabsDemoThree() {
   ];
 
   return (
-    <div className="h-[35rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full mb-40">
+    <div className="md:h-[35rem] xxsm:h-[60rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full mb-40">
       <TabsThree tabs={tabs} />
     </div>
   );

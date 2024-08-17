@@ -40,7 +40,7 @@ export const TabsThree = ({
             }}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
-            className={cn("relative pr-5 py-2 rounded-full", tabClassName)}
+            className={cn("relative pr-5 py-2", tabClassName)}
             style={{
               transformStyle: "preserve-3d",
             }}
@@ -56,7 +56,7 @@ export const TabsThree = ({
               />
             )}
 
-            <span className="relative block text-black dark:text-white border rounded-xl py-2 px-5 bg-neutral-600 md:text-xl">
+            <span className="relative block text-black dark:text-white border xxsm:rounded-md md:rounded-xl md:py-2 md:px-5 xxsm:p-1 bg-neutral-600 md:text-xl">
               {tab.title}
             </span>
           </button>
@@ -67,7 +67,7 @@ export const TabsThree = ({
         active={active}
         key={active.value}
         hovering={hovering}
-        className={cn("mt-28", contentClassName)}
+        className={cn("md:mt-28 xxsm:mt-24", contentClassName)}
       />
     </>
   );
